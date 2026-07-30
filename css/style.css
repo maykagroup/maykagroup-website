@@ -7,14 +7,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #333;
 }
 
 
 header {
-    background: #ffffff;
-    padding: 20px;
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #ddd;
 }
 
@@ -22,42 +25,80 @@ header {
 .logo {
     font-size: 28px;
     font-weight: bold;
+    color: #0077b6;
 }
 
 
 nav a {
-    margin-right: 20px;
+    margin-left: 20px;
     text-decoration: none;
     color: #333;
+    font-weight: 500;
 }
 
 
 nav a:hover {
-    color: #0077cc;
+    color: #0077b6;
 }
 
 
 main {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     padding: 40px 20px;
 }
 
 
+section {
+    margin-bottom: 60px;
+}
+
+
+section:first-child {
+    background: #f2f9fc;
+    padding: 60px 40px;
+    border-radius: 10px;
+}
+
+
 h1 {
-    font-size: 42px;
+    font-size: 48px;
+    color: #003049;
 }
 
 
 h2 {
-    margin-top: 40px;
+    font-size: 32px;
+    color: #003049;
+}
+
+
+h3 {
+    color: #0077b6;
+}
+
+
+a {
+    color: #0077b6;
 }
 
 
 .product-box {
     border: 1px solid #ddd;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 25px;
     margin: 20px 0;
+    background: white;
+}
+
+
+.product-box:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.product-box a {
+    font-weight: bold;
 }
 
 
@@ -65,4 +106,22 @@ footer {
     text-align: center;
     padding: 30px;
     background: #f5f5f5;
+    margin-top: 40px;
+}
+
+
+@media(max-width:768px){
+
+header {
+    flex-direction: column;
+}
+
+nav {
+    margin-top:20px;
+}
+
+h1 {
+    font-size:36px;
+}
+
 }
